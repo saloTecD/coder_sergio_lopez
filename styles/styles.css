@@ -264,6 +264,7 @@ grid-template-areas: "inicio inicio inicio"
 .H_a{
     text-decoration: none;
 }
+
 #tabla{
     width: 50%;
     margin-left: 35%;
@@ -281,6 +282,8 @@ grid-template-areas: "inicio inicio inicio"
     font-style: italic;
     font-weight: bolder;
 }
+
+
 
 /* estilos contacto */
 
