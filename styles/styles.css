@@ -54,6 +54,9 @@ ul{
     grid-area: logo;
 
 }
+.h_logo:hover{
+    transform: rotateY(180deg);
+}
 .h_buscar{
     grid-area: busc;
 
@@ -95,17 +98,23 @@ grid-template-areas: "inicio inicio inicio"
     }
 
 .imgPortada{
-    margin-left: 35%;
+    margin-left: -35%;
     width: 30%;
     height: 30vh;
+    animation-name: index_banner;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
 }
 
-
+@keyframes index_banner {
+    0%{transform: translate(135vw);}
+}
 
 .quienesSomos{
     margin-top: 0;
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -118,7 +127,7 @@ grid-template-areas: "inicio inicio inicio"
 
 .porque{
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -131,7 +140,7 @@ grid-template-areas: "inicio inicio inicio"
 
 .herramientasUtiles{
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -146,7 +155,10 @@ grid-template-areas: "inicio inicio inicio"
     text-align: center;
 }
 
-
+.quienesSomos:hover,.porque:hover,.herramientasUtiles:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px rgb(190, 162, 162);
+}
 
 
 /* Estilos pagina quienes somos */
@@ -252,9 +264,39 @@ grid-template-areas: "inicio inicio inicio"
 .H_a{
     text-decoration: none;
 }
+
 #tabla{
-    width: 50%;
-    margin-left: 35%;
+    width: 70%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: "tabla ayuda";
+                      
+}
+#h_tabla{
+    grid-area: tabla;
+    
+}
+#herr_imagen{
+    grid-area: ayuda;
+    /* background-color: aqua; */
+    
+}
+#img_herr:hover{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    
+}
+#img_herr{
+       width: 50%;
+    transition: 3s;
+    
+}
+.img_h{
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    color: rgba(95, 138, 31, 0.726);
 }
 .H_subT{
     font-family: 'DynaPuff', cursive;
@@ -262,12 +304,20 @@ grid-template-areas: "inicio inicio inicio"
     width: 90%;
     margin-left: 5%;
     background-color: rgba(128, 128, 128, 0.185);
+    border-radius: 5%;
 }
 .H_descarga{
     text-decoration: none;
     color: green;
     font-style: italic;
     font-weight: bolder;
+}
+.h_cont{
+    margin: 10px;
+    
+}
+#InsRed,#InsIP,#InsAV,#InsPatch,#InsServ{
+    margin-left: 20px;
 }
 
 /* estilos contacto */
