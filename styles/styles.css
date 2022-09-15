@@ -54,6 +54,9 @@ ul{
     grid-area: logo;
 
 }
+.h_logo:hover{
+    transform: rotateY(180deg);
+}
 .h_buscar{
     grid-area: busc;
 
