@@ -319,6 +319,11 @@ grid-template-areas: "inicio inicio inicio"
 #InsRed,#InsIP,#InsAV,#InsPatch,#InsServ{
     margin-left: 20px;
 }
+.H_subT:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px rgb(190, 162, 162);
+}
+
 
 /* estilos contacto */
 
