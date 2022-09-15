@@ -95,17 +95,23 @@ grid-template-areas: "inicio inicio inicio"
     }
 
 .imgPortada{
-    margin-left: 35%;
+    margin-left: -35%;
     width: 30%;
     height: 30vh;
+    animation-name: index_banner;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
 }
 
-
+@keyframes index_banner {
+    0%{transform: translate(135vw);}
+}
 
 .quienesSomos{
     margin-top: 0;
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -118,7 +124,7 @@ grid-template-areas: "inicio inicio inicio"
 
 .porque{
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -131,7 +137,7 @@ grid-template-areas: "inicio inicio inicio"
 
 .herramientasUtiles{
     width: 85%;
-
+    border-radius: 10%;
     background-color: rgba(136, 112, 112, 0.295);
     height: 500px;
     text-align: justify;
@@ -146,7 +152,10 @@ grid-template-areas: "inicio inicio inicio"
     text-align: center;
 }
 
-
+.quienesSomos:hover,.porque:hover,.herramientasUtiles:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 10px 20px rgb(190, 162, 162);
+}
 
 
 /* Estilos pagina quienes somos */
