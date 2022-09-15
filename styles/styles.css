@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-image: linear-gradient(10deg, yellow,rgb(36, 36, 36),rgb(36, 36, 36), yellow);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "logo nav busc";
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+
+footer{
+    background-image: linear-gradient(10deg, yellow,rgb(36, 36, 36),rgb(36, 36, 36), yellow);
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3vh;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+li {
+    display: inline-block;
+    font-size: 1.2rem;
+
+}
+nav{
+    width: 100%;
+    display: flex;
+
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.h_logo{
+    grid-area: logo;
+
+}
+.h_buscar{
+    grid-area: busc;
+
+}
+.navItems{
+    text-decoration: none;
+    color: rgba(255, 136, 0, 0.877);
+    font-size: larger;
+}
+.h_nav{
+    display: flex;
+    grid-area: nav;
+    justify-content:space-around;
+}
+
+main{
+    height: 85vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.h_mobile ,.m_navitems{
+    display: none;
+}
+/* Estilos Index */
+
+#m_index{
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas: "inicio inicio inicio"
+                        "quien porque herra";
+}
+.inicio{
+    background-image: url(../assets/images/inicioBackImg.jpg);
+    width: 100%;
+    height: 100%;
+    grid-area: inicio;
+    }
+
+.imgPortada{
+    margin-left: 35%;
+    width: 30%;
+    height: 30vh;
+}
+
+
+
+.quienesSomos{
+    margin-top: 0;
+    width: 85%;
+
+    background-color: rgba(136, 112, 112, 0.295);
+    height: 500px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 45px;
+    font-family: 'DynaPuff', cursive;
+    grid-area: quien;
+}
+
+.porque{
+    width: 85%;
+
+    background-color: rgba(136, 112, 112, 0.295);
+    height: 500px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 35px;
+    font-family: 'DynaPuff', cursive;
+    grid-area: porque;
+}
+
+.herramientasUtiles{
+    width: 85%;
+
+    background-color: rgba(136, 112, 112, 0.295);
+    height: 500px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 25px;
+    font-family: 'DynaPuff', cursive;
+    grid-area: herra;
+}
+
+.contenidoPortada{
+    text-align: center;
+}
+
+
+
+
+/* Estilos pagina quienes somos */
+
+
+#qsomosMain{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "qsomos"
+                        "mision" 
+                        "vision"
+                        "aquien";
+}
+#qsom{
+    grid-area: qsomos;
+}
+#qmis{
+    grid-area: mision;
+}
+#qvis{
+    grid-area: vision;
+}
+#qaquien{
+    grid-area: aquien;
+}
+.QS_Contenido{
+    width: 80%;
+    background-color: rgba(9, 117, 9, 0.363);
+    height: 150px;
+    text-align: justify;
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 25px;
+    font-family: 'Aboreto', cursive;
+}
+.QS_subT{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+/* estilos pagina blog */
+
+#iframe{
+    width: 100%;
+    margin-top: 5px;
+
+
+}
+#B_SubT{
+    background-image:url("../assets/images/Blog_img.jpg");
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    font-family: 'DynaPuff', cursive;
+    color: rgb(226, 168, 177);
+}
+#B_EnlacesInternos{
+
+    text-align: center;
+    justify-items: center;
+}
+#B_List{
+    overflow: hidden;
+    white-space:nowrap;
+}
+#B_links{
+    width: 80%;
+    text-align: center;
+    position: absolute;
+}
+.B_contenido{
+    font-family: 'DynaPuff', cursive;
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* estilos pagina herramientas */
+#H_Titulo{
+    text-align: justify;
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-right: 100px;
+}
+#H_TituloCont{
+    font-family: 'DynaPuff', cursive;
+    font-size:xx-large;
+}
+#H_Lista{
+    text-align: justify;
+    align-items: center;
+}
+#H_ul{
+    text-align: center;
+    /* white-space:nowrap; */
+    list-style: none;
+
+}
+.H_a{
+    text-decoration: none;
+}
+#tabla{
+    width: 50%;
+    margin-left: 35%;
+}
+.H_subT{
+    font-family: 'DynaPuff', cursive;
+    text-align: justify;
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgba(128, 128, 128, 0.185);
+}
+.H_descarga{
+    text-decoration: none;
+    color: green;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/* estilos contacto */
+
+#Formulario{
+
+    width: 40%;
+    height: 30em;
+    margin-top: 100px;
+    margin-left: 500px;
+    /* text-align: center; */
+
+}
+#C_legend{
+    text-align: left;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: bisque;
+    width: 100%;
+    border: none;
+
+}
+#C_cont1{
+    width: 100%;
+
+    display: inline-block;
+
+
+}
+#C_nombre{
+
+    width: 40%;
+
+    text-align:left;
+    float: left;
+    margin-left: 20px;
+}
+#C_apellido{
+    width: 40%;
+
+    text-align:right;
+    float: right;
+    margin-right: 10%;
+}
+
+#C_email{
+    width: 100%;
+
+    text-align: left;
+    margin-left: 20px;
+
+
+}
+#C_eCivil{
+    width: 100%;
+
+    text-align: left;
+    margin-left: 20px;
+}
+::placeholder{
+    text-align: center;
+}
+#C_notificacion{
+    width: 100%;
+
+    text-align: left;
+    margin-left: 20px;
+}
+#C_comentario{
+    width: 100%;
+
+    text-align: left;
+    margin-left: 20px;
+}
+#C_buttons{
+    width: 100%;
+
+    display: inline-block;
+}
+#C_submit{
+    text-align:left;
+    float: left;
+    margin-left: 50px;
+}
+#C_limpiar{
+    text-align:right;
+    float: right;
+    margin-right: 10%;
+}
+#C_form{
+    background-color:bisque;
+}
+
+/* Media querys -------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px){
+    /* estilos generales */
+    header{
+        grid-template-columns: 4fr 1fr;
+        grid-template-areas: "menu logo"
+    }
+    #hbuscar, #Buscar{
+        display:none;
+
+    }
+    .h_nav{
+        grid-area: menu;
+        justify-content:space-around;
+    }
+    .h_logo{
+        grid-area: logo;
+        width: 40px;
+        margin-left: 40px;
+    }
+    .navItems{
+        font-size: 12px;}
+
+/* estilos index */
+    #m_index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-areas: "inicio"
+                        "quien"
+                        "porque"
+                        "herra";
+    }
+    .quienesSomos,.porque,.herramientasUtiles{
+        height: 300px;
+        font-size: small;
+    }
+
+
+    .imgPortada{
+       height: 15vh;
+    }
+/* estilos pagina quienes somos */
+
+.QS_Contenido{
+    font-size: 12px;
+}
+.QS_subT{
+    font-size: 12px;
+}
+/* estilos pagina blog */
+#iframe{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+}
+#video{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.B_contenido,#B_links,#B_List,#B_EnlacesInternos,#B_SubT,.link_int{
+    font-size: 10px;
+}
+/* Estilos pagina herramientas */
+#tabla{
+    display: none;
+}
+.H_a{
+    font-size: 14px;
+}
+#H_ul{
+
+    white-space:wrap;
+
+}
+
+/* estilos pagina contacto */
+
+#Formulario{
+
+    margin-top: 1%;
+    margin-left: 20%;
+    /* text-align: center; */
+    transform: scale(0.6);
+}
+
+}
+
+/* Media screen tamaño medio------------------------------------------------------------------------------------ */
+@media screen and (max-width: 900px) and (min-width:601px){
+    .navItems{
+        font-size: 14px;}
+    .quienesSomos,.porque,.herramientasUtiles{
+            height: 500px;
+            font-size: medium;
+        }
+    .imgPortada{
+            height: 25vh;
+         }
+    .h_logo{
+            width: 40px;
+         }
+    #m_index{
+
+            grid-template-rows: 0.4fr 1fr;}
+
+    #tabla{
+            margin-left: 25%;
+            }
+    #h_tabla{
+        font-size: 12px;
+    }
+    #Formulario{
+
+        margin-top: 1%;
+        margin-left: 20%;
+        /* text-align: center; */
+        /* transform: scale(0.6); */
+    }
+}

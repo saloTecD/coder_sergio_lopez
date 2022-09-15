@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>SecIT Blog</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../assets/images/logoSinFondo.png" alt="Logo" width="80px" class="h_logo">
+       <div class="h_nav"> 
+        <nav>
+            <ul>
+                <li><a href="../index.html" class="navItems">Inicio</a></li>
+                <li><a href="../pages/quienesSomos.html" class="navItems">Quienes Somos</a></li>
+                <li><a href="../pages/blog.html" class="navItems">Blog</a></li>
+                <li><a href="../pages/herramientas.html" class="navItems">Herramientas</a></li>
+                <li><a href="../pages/contacto.html" class="navItems">Contactenos</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+        
+        <div class="h_buscar"><input type="search" name="Buscar" id="Buscar" placeholder="Buscar"></div>
+        
+    </header>
+
+    <main>
+       
+
+
+        <div id="Formulario">
+            <fieldset style="border:0 ;">
+                <legend id="C_legend">Contactenos</legend>
+                    <form action="" method="post" id="C_form">
+                    <div id="C_cont1">
+                        <div id="C_nombre">Nombre* <br><input type="text" name="Nombre" id="Nombre" required></div>
+                        <div id="C_apellido">Apellido* <br><input type="text" name="Apellido" id="Apellido" required></div>
+                    </div>
+                    <br>
+                    <br>
+                    <div id="C_email">Email* <br><input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" size="47"></div>
+                    <br>
+                    <div id="C_eCivil">
+                        <label for="EstadoCivil">Estado Civil</label>
+                        <select id="EstadoCivil" name="EstadoCivil">
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                        </select>
+                    </div>
+                    <br>
+                  
+                    <div id="C_comentario">
+                        <label for="Comentarios">Comentarios</label><br>
+                        <textarea name="Comentarios" id="Comentarios" cols="47" rows="10"></textarea>
+                    </div>
+                    <br><br>
+                    <div id="C_notificacion">
+                        <label for="RecibirCorreo">Desea Recibir Correos y notificaciones</label>
+                        <input type="checkbox" name="RecibirCorreo" id="RecibirCorreo">
+                    </div>
+                    <br><br>
+                    <div id="C_buttons">
+                        <input type="submit" id="C_submit">
+                        <input type="reset" value="Limpiar Datos" id="C_limpiar">
+                    </div>
+                    <br>
+                </form>
+            </fieldset>
+        </div>
+        <br><br>
+    </main>
+        <footer>
+            footer
+        </footer>
+    </body>
