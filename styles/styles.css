@@ -266,8 +266,37 @@ grid-template-areas: "inicio inicio inicio"
 }
 
 #tabla{
-    width: 50%;
-    margin-left: 35%;
+    width: 70%;
+    margin-left: 25%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 7fr 3fr;
+    grid-template-areas: "tabla ayuda";
+                      
+}
+#h_tabla{
+    grid-area: tabla;
+    
+}
+#herr_imagen{
+    grid-area: ayuda;
+    /* background-color: aqua; */
+    
+}
+#img_herr:hover{
+    transform: rotate(90deg);
+    transform-origin: bottom right;
+    
+}
+#img_herr{
+       width: 50%;
+    transition: 3s;
+    
+}
+.img_h{
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+    color: rgba(95, 138, 31, 0.726);
 }
 .H_subT{
     font-family: 'DynaPuff', cursive;
